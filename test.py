@@ -4,6 +4,7 @@ import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 import nltk
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 import seaborn as sns
