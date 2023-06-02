@@ -9,12 +9,12 @@ This project is a part of the [Yelp Dataset](https://www.yelp.com/dataset).
 Yelp is a crowd-source app that allows users to critique restaurants by providing
 a star rating from 1-5 and a message argumenting their reasons. It acts as a way for 
 restaurants to market their popularity, have business-customer interaction, set standards expectations
-and to able to lean from customer criticism. 
+and to be able to learn from customer criticism. 
 
 Goals of project
-1) Using NLP analyze the text of certain ratings from yelp reviews
+1) Using NLP analyze the text of certain ratings from Yelp reviews.
 2) Try to connect a business sense to from data to drive data driven decision making through self awareness of restaurant, influence of market segmentation and to continue working on strenghts. 
-3) Develop a web application for stakeholders to use to pursue data driven decision making from my findings
+3) Develop a web application for stakeholders to use to pursue data driven decision making from my findings.
 
 ## Business Applications of project Abstract
 Market Segmentaiton - The pillars of a Restaurant aligns from 
@@ -41,7 +41,7 @@ Common adjectives and links to Positive and Negative Reviews
 # Project Description
 
 ## 1) Getting the Data - from collections.py
-Started off by downloading the data from the Yelps open database
+Started off by downloading the data from the Yelps open database.
 
 I wanted to organize my data and be able to create a pipeline to get data from a JSON script, create two collections via MongoDB,
 develop a schema validation, and then transfer the data from collection to csv for analytics and for web application. 
