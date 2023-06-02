@@ -12,9 +12,8 @@ restaurants to market their popularity, have business-customer interaction, set 
 and to able to lean from customer criticism. 
 
 Goals of project
-1) Dissect why certain restaurants have higher ratings from each other and see what distinguishes from each other.
-2) The goal is to use natural language processors as a way to make predictions on why some ratings score 
-higher than others. We want to learn from unhappy customers.
+1) Using NLP analyze the text of certain ratings from yelp reviews
+2) Try to connect a business sense to from data to drive data driven decision making through self awareness of restaurant, influence of market segmentation and to continue working on strenghts. 
 3) Develop a web application for stakeholders to use to pursue data driven decision making from my findings
 
 ## Business Applications of project Abstract
