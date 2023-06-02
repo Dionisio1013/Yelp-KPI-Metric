@@ -48,13 +48,19 @@ I wanted to organize my data and be able to create a pipeline to get data from a
 develop a schema validation, and then transfer the data from collection to csv for analytics and for web application. 
 
 ## 2) Analyzing the Data & Key Findings
+Neutral reviews:
+Most frequent keywords (top 5) of restaurants is the name of the food served, culture.
 
+Positive reviews:
+Key findings is the most popular word for positive ratings is: Good and Great
+
+Negative reviews:
 
 ## 3) Building the web application
 Built using streamlit. I was able to create a web application that showcases KPIs of restaurants. It contains information regarding 
 a description of the business, sentiment analytics of words from customers and a place to access customer reviews of.
 
-Description of restaurant - 
+Description of restaurant
 - Name and common hashtags
 - Opening hours
 - Address and Visual Location of Restaurant
@@ -65,6 +71,10 @@ Sentiment Analytics
 - Most common adjectives from positive ratings
 - Most common adjectives from negative ratings
 - Word web to see which adjective links to what noun
+
+Customer Reviews
+- Slider that filters customer review ratings from 1-5
+- Displays the customer's review ratings where you can double click to expand. 
 
 ## Getting Started
 
