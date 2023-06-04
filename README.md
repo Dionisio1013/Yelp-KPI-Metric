@@ -43,7 +43,33 @@ Common adjectives and links to Positive and Negative Reviews
 ## 1) Getting the Data - from collections.py
 Started off by downloading the data from the Yelps open database.
 
-I wanted to organize my data and be able to create a pipeline to get data from a JSON script, create two collections via MongoDB,
+yelp_academic_dataset_business.json
+- Business_id
+- name
+- address
+- city
+- state
+- latitude
+- longitude
+- stars
+- review_count
+- attributes
+- categories
+
+yelp_academic_dataset_review.json
+- business_id
+- text
+- review_rating
+
+Goal
+1) Connect to MongoDB client
+2) Extract data from Yelp JSON scripts and append into two 2-D arrays, Business & Reviews
+3) Create empty two collections and apply schema validation 
+4) Insert Business and Review documents into their collections
+5) Convert from Collection to DataFrame
+6) Join both DataFrames via business_id
+7) return Dataframe to CSV for Data Exploration
+
 develop a schema validation, and then transfer the data from collection to csv for analytics and for web application. 
 
 ## 2) Analyzing the Data & Key Findings
