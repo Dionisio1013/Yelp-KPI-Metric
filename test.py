@@ -21,16 +21,13 @@ from textblob import TextBlob
 # Use the selected_name variable in further processing or display
 
 
-yelpdf1 = pd.read_csv('yelp20Revampedbusiness.csv')
+yelpdf = pd.read_csv('yelp100Revampedbusiness.csv')
 yelpdf2 = pd.read_csv('yelp40Revampedbusiness.csv')
 
 # yelpdf1 = pd.read_csv('yelp20Revampedbusiness.csv')
 # yelpdf2 = pd.read_csv('yelp40Revampedbusiness.csv')
 
-yelpdf2.drop(columns = 'Unnamed: 0', inplace = True)
-yelpdf1.drop(columns = 'Unnamed: 0', inplace = True)
-
-yelpdf = pd.concat([yelpdf1, yelpdf2],ignore_index = True)
+yelpdf.drop(columns = 'Unnamed: 0', inplace = True)
 
 noneditedyelpdf = yelpdf.copy()
 
@@ -319,7 +316,7 @@ if selected_sentiment == 'Sentiment Analysis':
 
         st.plotly_chart(fig_word_count)
 
-    if genre == 'Negative': 
+    if genre == 'Negative' and negative_reviews > 0: 
         st.write("Displayed are key words related to Negative Reviews.")
    
         negative_word_frequency = negative_words_df.set_index('word').to_dict()['count']
@@ -349,6 +346,8 @@ if selected_sentiment == 'Sentiment Analysis':
         )
 
         st.plotly_chart(fig_word_count)
+    else:
+        st.write('No Negative Reviews')
 
 
     
