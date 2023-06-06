@@ -3,7 +3,7 @@
 Here is a link to my [web application!](https://dionisio1013-hope-test-bdpevq.streamlit.app/)
 This project is a part of the [Yelp Dataset](https://www.yelp.com/dataset).
 
-#### -- Project Status: [Active]
+#### -- Project Status: [Active/In Progress]
 
 ## Project Intro/Objective
 Yelp is a crowd-source app that allows users to critique restaurants by providing
