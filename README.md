@@ -23,18 +23,16 @@ Common adjectives and links to Positive and Negative Reviews
 
 
 ### Methods Used
-* Inferential Statistics
 * Machine Learning
 * Data Visualization
 * NLP
-* Predictive Modeling
 * etc.
 
 ### Technologies
 * Python
 * MongoDB
-* Packages: Pandas, Numpy, Nltk
-* jupyter
+* Packages: Pandas, Numpy, Nltk, Textblob, Matplot, Plotly, WordCloud
+* Jupyter
 * Streamlit
 * etc. 
 
@@ -72,8 +70,8 @@ Goal
 
 develop a schema validation, and then transfer the data from collection to csv for analytics and for web application. 
 
-## 2) Analyzing the Data & Key Findings
-Neutral reviews:
+## 2) Analyzing the Data & Key Findings (In Progress)
+No Sentiment reviews:
 Most frequent keywords (top 5) of restaurants is the name of the food served, culture.
 
 Positive reviews:
