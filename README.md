@@ -80,14 +80,41 @@ Goal
 6) Join both DataFrames via business_id
 7) return Dataframe to CSV for Data Exploration
 
-develop a schema validation, and then transfer the data from collection to csv for analytics and for web application. 
+For the sake of runtime and size of the Yelp dataset (Over 6,990,280 million records and 150,346 businesses), I've extracted only 100 businesses from the JSON script and joined it's customer reviews to them.
+
+The total shape of the dataframe is (12137,12)
+There are twleve columns and 12,137 observations
+
 
 ## 2) Analyzing the Data & Key Findings (In Progress)
+
+**Key Features:**
+The main feature that we are mainly looking into is Text which consists of an entire passage of the customer's review. and its relationship with our featured engineered variable: Sentiment
+* Text
+* Customer_rating
+* Emotion/Sentiment (Featured Engineered)
+
+**Preprocessing data**
+To use NLP techniques we generally want to work with data that is tokenized, cleaned and standardized.
+* Lowercased entire text
+* Removed stop words
+* Removed all punctuations
+* Tokenizing (splitting each word of a sentence to it's own token)
+
+**Feature Engineering**
+Added a new feature where customer reviews that is rated 3,4,5 is "Positive" sentiment and 1,2 is "Negative" sentiment.
+
+Analysis
+
 No Sentiment reviews:
 Most frequent keywords (top 5) of restaurants is the name of the food served, culture.
 
 Positive reviews:
-Key findings is the most popular word for positive ratings is: Good and Great
+The most popular adjectives used for positive ratings is: "Good" and "Great". The words largely assosiated with these adjectives are:
+* Place 
+* Food
+* Service
+* Time
 
 Negative reviews:
 
