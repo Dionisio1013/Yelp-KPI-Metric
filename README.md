@@ -16,7 +16,7 @@ Goals of project
 2) Gain business sense of using yelp data to drive data driven decision making.
 3) Develop a web application for stakeholders to visualize KPI of their restaurants.
 
-## Business Applications of project Abstract
+## Business Applications of project
 **Market Segmentaiton** - By analyzing the data and keywords it's important for restaurant owners to focus on these characteristics when segmenting towards an audience
 Main focuses of restaurants
 1) Food (Specialities)
