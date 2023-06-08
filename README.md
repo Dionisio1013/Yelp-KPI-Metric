@@ -1,7 +1,7 @@
 # Yelp KPI Web Application & Sentiment Analysis
 
 Here is a link to my [web application!](https://dionisio1013-hope-test-bdpevq.streamlit.app/)
-This project is a part of the [Yelp Dataset](https://www.yelp.com/dataset).
+This project is part of the [Yelp Dataset](https://www.yelp.com/dataset).
 
 #### -- Project Status: [Active/In Progress]
 
@@ -17,15 +17,22 @@ Goals of project
 3) Develop a web application for stakeholders to visualize KPI of their restaurants.
 
 ## Business Applications of project
-**Market Segmentaiton** - By analyzing the data and keywords it's important for restaurant owners to focus on these characteristics when segmenting towards an audience
-Main focuses of restaurants
+**Market Segmentaiton** - By analyzing the data and keywords it's important for restaurant owners to focus on these characteristics when segmenting towards a specific audience.
+Main focuses of restaurants:
+
 1) Food (Specialities)
-2) Service (customer oriented)
+2) Service (Customer oriented)
 3) Culture Identity - Korean, Mexican, Italian, etc
 4) Time of day - Breakfast, Lunch, Dinner
 
-**Self awareness of a company** - KPI allows for restaurants owners to manage their restaurants and to benchmark performances from Web Application KPI.
-Eg. Owner of a Korean Barbaque chain has 5 restaurants scattered around California
+1) and 2) serves as a baseline/foundation for a successful restaurant. 3) and 4) services as more of the restaurant's brand image, identity, and distinct characteristics that sets apart from other restaurants
+
+**Self awareness of a company** - KPI allows for restaurant owners to manage their restaurant(s) and to benchmark performances thorugh customer reviews KPI metrics and Sentiment Analysis.
+Eg. Owner of a Korean Barbaque chain has 5 restaurants scattered around California.
+* Owner can easly access each of the five restaurants from different cities.
+* Can identify which restaurant has the best rating and most reviews.
+* Similarities & Differences of reviews from each restaurant.
+* Based on reading reviews and sentiment analysis, owner can deduce issues within the restaurant whether it be personel, food, service issue. 
 
 ### Methods Used
 * Machine Learning
