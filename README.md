@@ -25,7 +25,7 @@ Main focuses of restaurants:
 3) Culture Identity - Korean, Mexican, Italian, etc
 4) Time of day - Breakfast, Lunch, Dinner
 
-1) and 2) serves as a baseline/foundation for a successful restaurant. 3) and 4) services as more of the restaurant's brand image, identity, and distinct characteristics that sets apart from other restaurants
+Number 1) and 2) serves as a baseline/foundation for a successful restaurant. Number 3) and 4) services as more of the restaurant's brand image, identity, and distinct characteristics that sets apart from other restaurants
 
 **Self awareness of a company** - KPI allows for restaurant owners to manage their restaurant(s) and to benchmark performances thorugh customer reviews KPI metrics and Sentiment Analysis.
 Eg. Owner of a Korean Barbaque chain has 5 restaurants scattered around California.
