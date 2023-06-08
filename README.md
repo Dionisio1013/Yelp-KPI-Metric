@@ -13,14 +13,19 @@ and to be able to learn from customer criticism.
 
 Goals of project
 1) Using NLP analyze the text of certain ratings from Yelp reviews.
-2) Try to connect a business sense to from data to drive data driven decision making through self awareness of restaurant, influence of market segmentation and to continue working on strenghts. 
-3) Develop a web application for stakeholders to use to pursue data driven decision making from my findings.
+2) Gain business sense of using yelp data to drive data driven decision making.
+3) Develop a web application for stakeholders to visualize KPI of their restaurants.
 
 ## Business Applications of project Abstract
-Market Segmentaiton - The pillars of a Restaurant aligns from 
+**Market Segmentaiton** - By analyzing the data and keywords it's important for restaurant owners to focus on these characteristics when segmenting towards an audience
+Main focuses of restaurants
+1) Food (Specialities)
+2) Service (customer oriented)
+3) Culture Identity - Korean, Mexican, Italian, etc
+4) Time of day - Breakfast, Lunch, Dinner
 
-Common adjectives and links to Positive and Negative Reviews
-
+**Self awareness of a company** - KPI allows for restaurants owners to manage their restaurants and to benchmark performances from Web Application KPI.
+Eg. Owner of a Korean Barbaque chain has 5 restaurants scattered around California
 
 ### Methods Used
 * Machine Learning
