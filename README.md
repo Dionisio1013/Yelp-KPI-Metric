@@ -6,10 +6,7 @@ This project is part of the [Yelp Dataset](https://www.yelp.com/dataset).
 #### -- Project Status: [Active/In Progress]
 
 ## Project Intro/Objective
-Yelp is a crowd-source app that allows users to critique restaurants by providing
-a star rating from 1-5 and a message argumenting their reasons. It acts as a way for 
-restaurants to market their popularity, have business-customer interaction, set standards expectations
-and to be able to learn from customer criticism. 
+Yelp is a crowd-sourced app that allows users to critique restaurants by providing a star rating from 1-5 and a message arguing their reasons. It acts as a platform for restaurants to market their popularity, facilitate business-customer interaction, set standard expectations, and learn from customer criticism.
 
 Goals of project
 1) Using NLP analyze the text of certain ratings from Yelp reviews.
@@ -25,7 +22,7 @@ Main focuses of restaurants:
 3) Culture Identity - Korean, Mexican, Italian, etc
 4) Time of day - Breakfast, Lunch, Dinner
 
-Number 1) and 2) serves as a baseline/foundation for a successful restaurant. Number 3) and 4) services as more of the restaurant's brand image, identity, and distinct characteristics that sets apart from other restaurants
+Number 1) and 2) serves as a baseline/foundation for a successful restaurant. Number 3) and 4) serves as more of the restaurant's brand image, identity, and distinct characteristics that sets apart from other restaurants
 
 **Self awareness of a company** - KPI allows for restaurant owners to manage their restaurant(s) and to benchmark performances thorugh customer reviews KPI metrics and Sentiment Analysis.
 Eg. Owner of a Korean Barbaque chain has 5 restaurants scattered around California.
