@@ -1,9 +1,18 @@
 # Yelp KPI Web Application & Sentiment Analysis
 
+If website is down hit the snooze button and wait a couple of minutes!
+
 Here is a link to my [web application!](https://dionisio1013-hope-test-bdpevq.streamlit.app/)
 This project is part of the [Yelp Dataset](https://www.yelp.com/dataset).
 
-#### -- Project Status: [Active/In Progress]
+Here is display of the website 
+
+<img width="1440" alt="image" src="https://github.com/Dionisio1013/Yelp-KPI-Metric/assets/106797659/44d5722a-8eb2-4640-ad1f-e349bca3604c">
+
+<img width="1440" alt="image" src="https://github.com/Dionisio1013/Yelp-KPI-Metric/assets/106797659/78fd04b4-fbeb-4987-a7d1-90f46476d2c7">
+
+<img width="1440" alt="image" src="https://github.com/Dionisio1013/Yelp-KPI-Metric/assets/106797659/d06c82e4-6b9d-4910-9b7e-4fe5df5446c6">
+
 
 ## Project Intro/Objective
 Yelp is a crowd-sourced app that allows users to critique restaurants by providing a star rating from 1-5 and a message arguing their reasons. It acts as a platform for restaurants to market their popularity, facilitate business-customer interaction, set standard expectations, and learn from customer criticism.
