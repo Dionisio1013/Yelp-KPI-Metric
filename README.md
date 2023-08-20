@@ -1,11 +1,11 @@
 # Yelp KPI Web Application & Sentiment Analysis
 
-If website is down hit the snooze button and wait a couple of minutes!
+If the website is down, hit the snooze button and wait a couple of minutes!
 
 Here is a link to my [web application!](https://dionisio1013-hope-test-bdpevq.streamlit.app/)
 This project is part of the [Yelp Dataset](https://www.yelp.com/dataset).
 
-Here is display of the website 
+Here is a display of the website 
 
 <img width="1440" alt="image" src="https://github.com/Dionisio1013/Yelp-KPI-Metric/assets/106797659/44d5722a-8eb2-4640-ad1f-e349bca3604c">
 
@@ -18,12 +18,13 @@ Here is display of the website
 Yelp is a crowd-sourced app that allows users to critique restaurants by providing a star rating from 1-5 and a message arguing their reasons. It acts as a platform for restaurants to market their popularity, facilitate business-customer interaction, set standard expectations, and learn from customer criticism.
 
 Goals of project
-1) Using NLP analyze the text of certain ratings from Yelp reviews.
-2) Gain business sense of using yelp data to drive data driven decision making.
-3) Develop a web application for stakeholders to visualize KPI of their restaurants.
+1) Use NLP to analyze specific text relating to positive and negative sentiment from Yelp reviews.
+2) Develop a web application for stakeholders to visualize the KPI of their restaurants.
+3) Implement an analysis tool from Restaurants' Positives and Criticisms.
+4) Create a classification model that predicts the sentiment of user-inputted reviews.
 
 ## Business Applications of project
-**Market Segmentaiton** - By analyzing the data and keywords it's important for restaurant owners to focus on these characteristics when segmenting towards a specific audience.
+**Market Segmentation** - By analyzing the data and keywords, it's important for restaurant owners to focus on these characteristics when segmenting toward a specific audience.
 Main focuses of restaurants:
 
 1) Food (Specialities)
@@ -31,14 +32,14 @@ Main focuses of restaurants:
 3) Culture Identity - Korean, Mexican, Italian, etc
 4) Time of day - Breakfast, Lunch, Dinner
 
-Number 1) and 2) serves as a baseline/foundation for a successful restaurant. Number 3) and 4) serves as more of the restaurant's brand image, identity, and distinct characteristics that sets apart from other restaurants
+Number 1) and 2) serves as a baseline/foundation for a successful restaurant. Number 3) and 4) serves as more of the restaurant's brand image, identity, and distinct characteristics that set it apart from other restaurants
 
-**Self awareness of a company** - KPI allows for restaurant owners to manage their restaurant(s) and to benchmark performances thorugh customer reviews KPI metrics and Sentiment Analysis.
-Eg. Owner of a Korean Barbaque chain has 5 restaurants scattered around California.
-* Owner can easly access each of the five restaurants from different cities.
+**Self-awareness of a company** - KPI allows restaurant owners to manage their restaurant(s) and to benchmark performances through customer reviews, KPI metrics, and Sentiment Analysis.
+E.g., the Owner of a Korean Barbeque chain has 5 restaurants scattered around California.
+* Owner can easily access each of the five restaurants from different cities.
 * Can identify which restaurant has the best rating and most reviews.
 * Similarities & Differences of reviews from each restaurant.
-* Based on reading reviews and sentiment analysis, owner can deduce issues within the restaurant whether it be personel, food, service issue. 
+* Based on reading reviews and sentiment analysis, the owner can deduce issues within the restaurant, whether it be personal, food, or service issues. 
 
 ### Methods Used
 * Machine Learning
@@ -77,22 +78,19 @@ yelp_academic_dataset_review.json
 - text
 - review_rating
 
-Goal
-1) Connect to MongoDB client
-2) Extract data from Yelp JSON scripts and append into two 2-D arrays, Business & Reviews
-3) Create empty two collections and apply schema validation 
-4) Insert Business and Review documents into their collections
-5) Convert from Collection to DataFrame
+Process
+1) Create 
+2) 
 6) Join both DataFrames via business_id
 7) return Dataframe to CSV for Data Exploration
 
-For the sake of runtime and size of the Yelp dataset (Over 6,990,280 million records and 150,346 businesses), I've extracted only 100 businesses from the JSON script and joined it's customer reviews to them.
+For the sake of runtime and size of the Yelp dataset (Over 6,990,280 million records and 150,346 businesses), I've extracted only 100 businesses from the JSON script and joined its customer reviews to them.
 
-The total shape of the dataframe is (12137,12)
-There are twleve columns and 12,137 observations
+The total shape of the data frame is (12137,12)
+There are twelve columns and 12,137 observations
 
 
-## 2) Analyzing the Data & Key Findings (In Progress)
+## 2) EDA (In Progress)
 
 **Key Features:**
 The main feature that we are mainly looking into is Text which consists of an entire passage of the customer's review. and its relationship with our featured engineered variable: Sentiment
