@@ -1,6 +1,6 @@
 # Yelp KPI Web Application & Sentiment Analysis
 
-If the website is down, hit the snooze button and wait a couple of minutes!
+If the website is down, hit the snooze button and wait a few minutes!
 
 Here is a link to my [web application!](https://dionisio1013-hope-test-bdpevq.streamlit.app/)
 This project is part of the [Yelp Dataset](https://www.yelp.com/dataset).
@@ -13,6 +13,9 @@ Here is a display of the website
 
 <img width="1440" alt="image" src="https://github.com/Dionisio1013/Yelp-KPI-Metric/assets/106797659/d06c82e4-6b9d-4910-9b7e-4fe5df5446c6">
 
+<img width="1440" alt="Screenshot 2023-08-21 at 3 39 57 PM" src="https://github.com/Dionisio1013/Yelp-KPI-Metric/assets/106797659/367f29b1-dd5c-410b-8162-50242abd3cd0">
+
+<img width="1440" alt="Screenshot 2023-08-21 at 3 38 48 PM" src="https://github.com/Dionisio1013/Yelp-KPI-Metric/assets/106797659/ad802f38-c014-4dab-b769-b47cc86f443e">
 
 ## Project Intro/Objective
 Yelp is a crowd-sourced app that allows users to critique restaurants by providing a star rating from 1-5 and a message arguing their reasons. It acts as a platform for restaurants to market their popularity, facilitate business-customer interaction, set standard expectations, and learn from customer criticism.
@@ -57,7 +60,7 @@ E.g., the Owner of a Korean Barbeque chain has 5 restaurants scattered around Ca
 
 # Project Description
 
-## 1) Getting the Data - from collections.py
+## 1) Data Ingestion - from collections.py
 Started off by downloading the data from the Yelps open database.
 
 yelp_academic_dataset_business.json
@@ -79,10 +82,9 @@ yelp_academic_dataset_review.json
 - review_rating
 
 Process
-1) Create 
-2) 
-6) Join both DataFrames via business_id
-7) return Dataframe to CSV for Data Exploration
+1) Create two separate data frames extracted from the business.json file and the review.json file
+2) Join both DataFrames via business_id
+3) Return Dataframe to CSV
 
 For the sake of runtime and size of the Yelp dataset (Over 6,990,280 million records and 150,346 businesses), I've extracted only 100 businesses from the JSON script and joined its customer reviews to them.
 
@@ -90,7 +92,7 @@ The total shape of the data frame is (12137,12)
 There are twelve columns and 12,137 observations
 
 
-## 2) EDA (In Progress)
+## 2) EDA
 
 **Key Features:**
 The main feature that we are mainly looking into is Text which consists of an entire passage of the customer's review. and its relationship with our featured engineered variable: Sentiment
