@@ -100,6 +100,15 @@ The main feature that we are mainly looking into is Text which consists of an en
 * Customer_rating
 * Emotion/Sentiment (Featured Engineered)
 
+<img width="482" alt="image" src="https://github.com/Dionisio1013/Yelp-KPI-Metric/assets/106797659/5579e472-8938-43bf-a454-859e63e8a225">
+Here is a count distribution of the sentiments.
+Positive: 6835 count
+Negative: 1722 count
+
+<img width="599" alt="image" src="https://github.com/Dionisio1013/Yelp-KPI-Metric/assets/106797659/4e4c7f1e-ac96-4845-ab88-d1e393b8f520">
+From taking the distribution of the customer_ratings, we can see how there is a J-shaped curve.
+
+
 **Preprocessing data**
 To use NLP techniques we generally want to work with data that is tokenized, cleaned and standardized.
 * Lowercased entire text
