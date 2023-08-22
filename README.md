@@ -100,9 +100,13 @@ The main feature that we are mainly looking into is Text which consists of an en
 * Customer_rating
 * Emotion/Sentiment (Featured Engineered)
 
+
+
+
 <img width="482" alt="image" src="https://github.com/Dionisio1013/Yelp-KPI-Metric/assets/106797659/5579e472-8938-43bf-a454-859e63e8a225">
 
 Here is a count distribution of the sentiments.
+
 Positive: 6835 count
 Negative: 1722 count
 
