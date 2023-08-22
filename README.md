@@ -5,7 +5,7 @@ If the website is down, hit the snooze button and wait a few minutes!
 Here is a link to my [web application!](https://dionisio1013-hope-test-bdpevq.streamlit.app/)
 This project is part of the [Yelp Dataset](https://www.yelp.com/dataset).
 
-Here is a display of the website 
+Here is a display of the website
 
 <img width="1440" alt="image" src="https://github.com/Dionisio1013/Yelp-KPI-Metric/assets/106797659/44d5722a-8eb2-4640-ad1f-e349bca3604c">
 
@@ -18,52 +18,60 @@ Here is a display of the website
 <img width="1440" alt="Screenshot 2023-08-21 at 3 38 48 PM" src="https://github.com/Dionisio1013/Yelp-KPI-Metric/assets/106797659/ad802f38-c014-4dab-b769-b47cc86f443e">
 
 ## Project Intro/Objective
+
 Yelp is a crowd-sourced app that allows users to critique restaurants by providing a star rating from 1-5 and a message arguing their reasons. It acts as a platform for restaurants to market their popularity, facilitate business-customer interaction, set standard expectations, and learn from customer criticism.
 
 Goals of project
-1) Use NLP to analyze specific text relating to positive and negative sentiment from Yelp reviews.
-2) Develop a web application for stakeholders to visualize the KPI of their restaurants.
-3) Implement an analysis tool from Restaurants' Positives and Criticisms.
-4) Create a classification model that predicts the sentiment of user-inputted reviews.
+
+1. Use NLP to analyze specific text relating to positive and negative sentiment from Yelp reviews.
+2. Develop a web application for stakeholders to visualize the KPI of their restaurants.
+3. Implement an analysis tool from Restaurants' Positives and Criticisms.
+4. Create a classification model that predicts the sentiment of user-inputted reviews.
 
 ## Business Applications of project
+
 **Market Segmentation** - By analyzing the data and keywords, it's important for restaurant owners to focus on these characteristics when segmenting toward a specific audience.
 Main focuses of restaurants:
 
-1) Food (Specialities)
-2) Service (Customer oriented)
-3) Culture Identity - Korean, Mexican, Italian, etc
-4) Time of day - Breakfast, Lunch, Dinner
+1. Food (Specialities)
+2. Service (Customer oriented)
+3. Culture Identity - Korean, Mexican, Italian, etc
+4. Time of day - Breakfast, Lunch, Dinner
 
 Number 1) and 2) serves as a baseline/foundation for a successful restaurant. Number 3) and 4) serves as more of the restaurant's brand image, identity, and distinct characteristics that set it apart from other restaurants
 
 **Self-awareness of a company** - KPI allows restaurant owners to manage their restaurant(s) and to benchmark performances through customer reviews, KPI metrics, and Sentiment Analysis.
 E.g., the Owner of a Korean Barbeque chain has 5 restaurants scattered around California.
-* Owner can easily access each of the five restaurants from different cities.
-* Can identify which restaurant has the best rating and most reviews.
-* Similarities & Differences of reviews from each restaurant.
-* Based on reading reviews and sentiment analysis, the owner can deduce issues within the restaurant, whether it be personal, food, or service issues. 
+
+- Owner can easily access each of the five restaurants from different cities.
+- Can identify which restaurant has the best rating and most reviews.
+- Similarities & Differences of reviews from each restaurant.
+- Based on reading reviews and sentiment analysis, the owner can deduce issues within the restaurant, whether it be personal, food, or service issues.
 
 ### Methods Used
-* Machine Learning
-* Data Visualization
-* NLP
-* etc.
+
+- Machine Learning
+- Data Visualization
+- NLP
+- etc.
 
 ### Technologies
-* Python
-* MongoDB
-* Packages: Pandas, Numpy, Nltk, Textblob, Matplot, Plotly, WordCloud
-* Jupyter
-* Streamlit
-* etc. 
+
+- Python
+- MongoDB
+- Packages: Pandas, Numpy, Nltk, Textblob, Matplot, Plotly, WordCloud
+- Jupyter
+- Streamlit
+- etc.
 
 # Project Description
 
 ## 1) Data Ingestion - from collections.py
+
 Started off by downloading the data from the Yelps open database.
 
 yelp_academic_dataset_business.json
+
 - Business_id
 - name
 - address
@@ -77,51 +85,60 @@ yelp_academic_dataset_business.json
 - categories
 
 yelp_academic_dataset_review.json
+
 - business_id
 - text
 - review_rating
 
 Process
-1) Create two separate data frames extracted from the business.json file and the review.json file
-2) Join both DataFrames via business_id
-3) Return Dataframe to CSV
+
+1. Create two separate data frames extracted from the business.json file and the review.json file
+2. Join both DataFrames via business_id
+3. Return Dataframe to CSV
 
 For the sake of runtime and size of the Yelp dataset (Over 6,990,280 million records and 150,346 businesses), I've extracted only 100 businesses from the JSON script and joined its customer reviews to them.
 
 The total shape of the data frame is (12137,12)
 There are twelve columns and 12,137 observations
 
-
 ## 2) EDA
 
 **Key Features:**
 The main feature that we are mainly looking into is Text which consists of an entire passage of the customer's review. and its relationship with our featured engineered variable: Sentiment
-* Text
-* Customer_rating
-* Emotion/Sentiment (Featured Engineered)
 
-
-
+- Text
+- Customer_rating
+- Emotion/Sentiment (Featured Engineered)
 
 <img width="482" alt="image" src="https://github.com/Dionisio1013/Yelp-KPI-Metric/assets/106797659/5579e472-8938-43bf-a454-859e63e8a225">
 
 Here is a count distribution of the sentiments.
 
-Positive: 6835 count
-Negative: 1722 count
+Positive: 6823 count
+Negative: 1719 count
+
+Overall with the 25.19% are Negative and 74.81% are Positive. There is a case of class imbalances and to compensate for the balances may be challenging since the text data is unique and can't be synthetically created. It's best to preserve the integrity of the data and use model evaluation techniques such as a Stratified cross fold valdiation to have an even amount of class distribution between each fold. For evaluation it may be best to look at other other performancem metrics such as F1-Score or AUC-ROC.
 
 <img width="599" alt="image" src="https://github.com/Dionisio1013/Yelp-KPI-Metric/assets/106797659/4e4c7f1e-ac96-4845-ab88-d1e393b8f520">
 
-
 From taking the distribution of the customer_ratings, we can see how there is a J-shaped curve.
 
+**Potential Biases**
+
+1. Extreme Reviews: This type of J-curve represents when there is an initial decline followed by a sharp upwards trend. This can represent that people are more inclined to be extreme with exceptional reviews and terrible reviews. In the case of 1 star reviews, one bad experienced can cause a consumer to sway their opinions and promote hate. It's the baseline goal for all restaurants to avoid these instances and the ambitious goal for owners to find techniques to make consumers become positively extreme.
+
+2. Missing information: Trying to break it down from the consumers persepctive. Many individuals may opt out in posting a review whether it be good or bad. This is a potential information gap that may not be retrieved due to inactive users or individuals with no exposure to yelp.
+
+3. Synthetic Data: In large metropolitan areas and higher compeition there may be fake reviews created by bots from both positve and negative reviews.
 
 **Preprocessing data**
-To use NLP techniques we generally want to work with data that is tokenized, cleaned and standardized.
-* Lowercased entire text
-* Removed stop words
-* Removed all punctuations
-* Tokenizing (splitting each word of a sentence to it's own token)
+To use NLP techniques its best to use generally want to work with data that is tokenized, cleaned and standardized.
+
+- Lowercased entire text
+- Removed stop words
+- Removed all punctuations
+- Tokenizing (splitting each word of a sentence to it's own token)
+- Part of speech
 
 **Feature Engineering**
 Added a new feature where customer reviews that is rated 3,4,5 is "Positive" sentiment and 1,2 is "Negative" sentiment.
@@ -133,32 +150,37 @@ Most frequent keywords (top 5) of restaurants is the name of the food served, cu
 
 Positive reviews:
 The most popular adjectives used for positive ratings is: "Good" and "Great". The words largely assosiated with these adjectives are:
-* Place 
-* Food
-* Service
-* Time
+
+- Place
+- Food
+- Service
+- Time
 
 Negative reviews:
 
 ## 3) Building the web application
-Built using streamlit. I was able to create a web application that showcases KPIs of restaurants. It contains information regarding 
+
+Built using streamlit. I was able to create a web application that showcases KPIs of restaurants. It contains information regarding
 a description of the business, sentiment analytics of words from customers and a place to access customer reviews of.
 
 Description of restaurant
+
 - Name and common hashtags
 - Opening hours
 - Address and Visual Location of Restaurant
 - Total Reviews and Count of Positive and Negative Ratings
 
 Sentiment Analytics
+
 - Reviews most common keywords of customer ratings
 - Most common adjectives from positive ratings
 - Most common adjectives from negative ratings
 - Word web to see which adjective links to what noun
 
 Customer Reviews
+
 - Slider that filters customer review ratings from 1-5
-- Displays the customer's review ratings where you can double click to expand. 
+- Displays the customer's review ratings where you can double click to expand.
 
 ## Getting Started
 
