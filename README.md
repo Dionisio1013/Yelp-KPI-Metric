@@ -125,11 +125,9 @@ From taking the distribution of the customer_ratings, we can see how there is a 
 
 **Positive Sentiment**
 
-<img width="460" alt="Screenshot 2023-08-24 at 9 08 37 PM" src="https://github.com/Dionisio1013/Yelp-KPI-Metric/assets/106797659/74bd0e77-f0a1-4b14-9777-97db69ccce5a">
+<img width="461" alt="Screenshot 2023-08-24 at 9 19 23 PM" src="https://github.com/Dionisio1013/Yelp-KPI-Metric/assets/106797659/200c2c6a-6f5e-4e79-bd36-b5f7818c5d78">
 
-<img width="461" alt="Screenshot 2023-08-24 at 9 08 17 PM" src="https://github.com/Dionisio1013/Yelp-KPI-Metric/assets/106797659/f3173dbe-df84-4bf7-86ec-7875ee779184">
-
-
+<img width="466" alt="Screenshot 2023-08-24 at 9 19 04 PM" src="https://github.com/Dionisio1013/Yelp-KPI-Metric/assets/106797659/a3116b54-2b54-427d-b403-26eb5a134b61">
 
 **Negative Sentiment**
 
