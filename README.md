@@ -104,7 +104,7 @@ There are 12 columns and 8542 observations
 ## 2) EDA
 
 **Key Features:**
-The main feature that we are mainly looking into is Text, which consists of an entire passage of the customer's review and its relationship with our featured engineered variable: Sentiment
+The main feature that we are looking into is Text, which consists of an entire passage of the customer's review and its relationship with our featured engineered variable: Sentiment
 
 - Text
 - Customer_rating
@@ -149,10 +149,10 @@ From taking the distribution of the customer_ratings, we can see how there is a 
 **Preprocessing data**
 To use NLP techniques it's best to use NLP techniques generally to work with tokenized, cleaned, and standardized data.
 
-- Lowercased entire text
-- Removed stop words
-- Removed all punctuations
-- Tokenizing (splitting each word of a sentence into its own token)
+- Removed all punctuations (regular expression)
+- Lowercased entire text (method)
+- Removed stop words (nltk + for loop)
+- Tokenizing (splitting each word of a sentence into it's own token)
 - Part of speech
 
 **Feature Engineering**
@@ -161,7 +161,7 @@ Added a new feature where customer reviews that are rated 3,4,5 are "Positive" s
 Analysis
 
 No Sentiment reviews:
-The most frequent keywords (top 5) of restaurants are the food served culture's names.
+The restaurants' most frequent keywords (top 5) are the food served culture's names.
 
 Positive reviews:
 The most popular adjectives used for positive ratings are: "Good" and "Great". The words largely associated with these adjectives are:
@@ -175,7 +175,7 @@ Negative reviews:
 
 ## 3) Building the web application
 
-Built using streamlit. I was able to create a web application that showcases KPIs of restaurants. It contains information regarding
+Built using streamlit. I was able to create a web application that showcases the KPIs of restaurants. It contains information regarding
 a description of the business, sentiment analytics of words from customers, and a place to access customer reviews.
 
 Description of restaurant
